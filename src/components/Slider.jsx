@@ -45,14 +45,14 @@ const Slider = () => {
        modules={[Navigation, Autoplay]}
             navigation
             autoplay={{
-              delay: 1500,          
-              disableOnInteraction: false, 
+              delay: 1000,          
+              disableOnInteraction: true, 
             }}
             
             loop={true}
             slidesPerView={1}
              
-      className="w-full lg:h-[420px] h-[220px]"
+      className="  w-full lg:h-[420px] h-[220px]"
     >
       {data.slide.map((item) => (
         <SwiperSlide key={item.id} className="">
@@ -60,7 +60,7 @@ const Slider = () => {
           {/* Background Image */}
           <img
             src={item.image}
-            className="w-full h-[300px] lg:h-[850px] lg:object-cover object-cover lg:mt-[0px] "
+            className="w-full h-[300px] lg:h-[550px] lg:object-fit object-cover lg:mt-[0px] "
           />
 
           {/*  */}

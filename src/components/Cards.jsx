@@ -99,15 +99,32 @@ const Cards = () => {
         { img: f4, offer: "Best Deals" },
       ],
     }, 
+     {
+      title: "Continue Shopping Deals",
+      products: [
+        { img: f4, offer: "Up to 45% | | off" },
+        { img: f2, offer: "Min 30% | | off" },
+        { img: f3, offer: "Up to 55% | | off" },
+        { img: f4, offer: "Best Deals" },
+      ],
+    },
+     {
+      title: "Continue Shopping Deals",
+      products: [
+        { img: f4, offer: "Up to 45% | | off" },
+        { img: f2, offer: "Min 30% | | off" },
+        { img: f3, offer: "Up to 55% | | off" },
+        { img: f4, offer: "Best Deals" },
+      ],
+    },
   ];
 
   return (
     <div className="bg-[#E3E6E6]">
-      <div className="relative z-20 mt-[-50px] px-6 pb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center">
+      <div className="relative z-20 lg:mt-[-150px] lg:px-[22px] pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 ">
           {data.map((item, index) => (
-           <div key={index} className="bg-white h-[360px] w-[300px] rounded-md shadow-md p-4 hover:shadow-lg transition flex flex-col">
-
+           <div key={index} className="bg-[rgb(255,255,255)] h-[390px] w-[320px]   p-4 hover:shadow-lg transition flex flex-col">
               {/* Title */}
               <p className="text-lg font-semibold mb-3">
                 {item.title}
@@ -120,7 +137,7 @@ const Cards = () => {
                    <a href="#"> <img
                       src={product.img}
                       alt=""
-                      className="h-[100px] w-full object-fit cursor-pointer"
+                      className="h-[120px] w-full object-fit cursor-pointer"
                     /></a>
 
                     {/* offer*/}

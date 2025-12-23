@@ -81,13 +81,13 @@ const Cardsprice = () => {
   ];
 
   return (
-    <div className="bg-[#E3E6E6] pb-[20px] mt-[-30px]">
-      <div className="px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center">
+    <div className="bg-[#E3E6E6] pb-[10px] mt-[-60px]">
+      <div className="px-5">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
           {data.map((item, index) => (
             <div
               key={index}
-              className="bg-white w-[300px] rounded-md shadow-md p-4 hover:shadow-lg transition flex flex-col"
+              className="bg-white w-[320px] rounded-md  p-4 hover:shadow-lg transition flex flex-col"
             >
               {/* Title */}
               <p className="text-lg font-semibold ">{item.title}</p>

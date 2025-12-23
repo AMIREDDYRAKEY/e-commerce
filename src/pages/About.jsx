@@ -8,12 +8,13 @@ import Contact from '../components/Contact'
 const About = () => {
   return (
     <div>
-        <Slider/>
-        <Cards/>
-        <div className='pb-[20px]' ><Bikeslider/></div>
-        <div className='pb-[90px]'><Fashionslider/></div>
-         <Cardsprice/>
-         <Contact/>
+        <div className='mt-[-642px] hidden lg:block '><Slider/></div>
+        <div className=''><Cards/></div>
+        <div className='pb-[20px] hidden lg:flex' ><Bikeslider/></div>
+        <div className='pb-[90px] hidden lg:flex'><Fashionslider/></div>
+         <div className='hidden lg:flex'><Cardsprice/></div>
+          <div className='pb-[0px] hidden lg:flex '><Fashionslider/></div>
+         <div className='hidden lg:block'><Contact/></div>
     </div>
   )
 }
