@@ -16,144 +16,64 @@ import p7 from "../assets/p7.png";
 import p8 from "../assets/p8.png";
 import p9 from "../assets/p9.png";
 import p10 from "../assets/p10.png";
+
 const Cards = () => {
-  const data = [
-    {
-      title: "Continue Shopping Deals",
-      products: [
-        { img: img1 },
-        { img: img2 },
-        { img: img2 },
-        { img: img1 },
-      ],
-    },
-    {
-      title: "Continue Shopping Deals",
-      products: [
-        { img: f1, offer: "Up to 45% | | off" },
-        { img: f1, offer: "Min 30% | | off" },
-        { img: f1, offer: "Up to 55% | | off" },
-        { img: f1, offer: "Best Deals" },
-      ],
-    },
-     {
-      title: "Continue Shopping Deals",
-      products: [
-        { img: f4, offer: "Up to 45% | | off" },
-        { img: f2, offer: "Min 30% | | off" },
-        { img: f3, offer: "Up to 55% | | off" },
-        { img: f4, offer: "Best Deals" },
-      ],
-    },
-      {
-      title: "Continue Shopping Deals",
-      products: [
-        { img: f5, offer: "Up to 45% | | off" },
-        { img: p1, offer: "Min 30% | | off" },
-        { img: p2, offer: "Up to 55% | | off" },
-        { img: p3, offer: "Best Deals" },
-      ],
-    },
-      {
-      title: "Continue Shopping Deals",
-      products: [
-        { img: p4, offer: "Up to 45% | | off" },
-        { img: p6, offer: "Min 30% | | off" },
-        { img: p5, offer: "Up to 55% | | off" },
-        { img: p3, offer: "Best Deals" },
-      ],
-    },
-      {
-      title: "Continue Shopping Deals",
-      products: [
-        { img: p7, offer: "Up to 45% | | off" },
-        { img: p1, offer: "Min 30% | | off" },
-        { img: p2, offer: "Up to 55% | | off" },
-        { img: p3, offer: "Best Deals" },
-      ],
-    },
-      {
-      title: "Continue Shopping Deals",
-      products: [
-        { img: p5, offer: "Up to 45% | | off" },
-        { img: p8, offer: "Min 30% | | off" },
-        { img: p9, offer: "Up to 55% | | off" },
-        { img: p10, offer: "Best Deals" },
-      ],
-    }, 
-      {
-      title: "Continue Shopping Deals",
-      products: [
-        { img: f1, offer: "Up to 45% | | off" },
-        { img: f1, offer: "Min 30% | | off" },
-        { img: f1, offer: "Up to 55% | | off" },
-        { img: f1, offer: "Best Deals" },
-      ],
-    },
-     {
-      title: "Continue Shopping Deals",
-      products: [
-        { img: f4, offer: "Up to 45% | | off" },
-        { img: f2, offer: "Min 30% | | off" },
-        { img: f3, offer: "Up to 55% | | off" },
-        { img: f4, offer: "Best Deals" },
-      ],
-    }, 
-     {
-      title: "Continue Shopping Deals",
-      products: [
-        { img: f4, offer: "Up to 45% | | off" },
-        { img: f2, offer: "Min 30% | | off" },
-        { img: f3, offer: "Up to 55% | | off" },
-        { img: f4, offer: "Best Deals" },
-      ],
-    },
-     {
-      title: "Continue Shopping Deals",
-      products: [
-        { img: f4, offer: "Up to 45% | | off" },
-        { img: f2, offer: "Min 30% | | off" },
-        { img: f3, offer: "Up to 55% | | off" },
-        { img: f4, offer: "Best Deals" },
-      ],
-    },
-  ];
+const data = [ { title: "Continue Shopping Deals", products: [ { img: img1 }, { img: img2 }, { img: img2 }, { img: img1 }, ], }, { title: "Continue Shopping Deals", products: [ { img: f1, offer: "Up to 45% | | off" }, { img: f1, offer: "Min 30% | | off" }, { img: f1, offer: "Up to 55% | | off" }, { img: f1, offer: "Best Deals" }, ], }, { title: "Continue Shopping Deals", products: [ { img: f4, offer: "Up to 45% | | off" }, { img: f2, offer: "Min 30% | | off" }, { img: f3, offer: "Up to 55% | | off" }, { img: f4, offer: "Best Deals" }, ], }, { title: "Continue Shopping Deals", products: [ { img: f5, offer: "Up to 45% | | off" }, { img: p1, offer: "Min 30% | | off" }, { img: p2, offer: "Up to 55% | | off" }, { img: p3, offer: "Best Deals" }, ], }, { title: "Continue Shopping Deals", products: [ { img: p4, offer: "Up to 45% | | off" }, { img: p6, offer: "Min 30% | | off" }, { img: p5, offer: "Up to 55% | | off" }, { img: p3, offer: "Best Deals" }, ], }, { title: "Continue Shopping Deals", products: [ { img: p7, offer: "Up to 45% | | off" }, { img: p1, offer: "Min 30% | | off" }, { img: p2, offer: "Up to 55% | | off" }, { img: p3, offer: "Best Deals" }, ], }, { title: "Continue Shopping Deals", products: [ { img: p5, offer: "Up to 45% | | off" }, { img: p8, offer: "Min 30% | | off" }, { img: p9, offer: "Up to 55% | | off" }, { img: p10, offer: "Best Deals" }, ], }, { title: "Continue Shopping Deals", products: [ { img: f1, offer: "Up to 45% | | off" }, { img: f1, offer: "Min 30% | | off" }, { img: f1, offer: "Up to 55% | | off" }, { img: f1, offer: "Best Deals" }, ], }, { title: "Continue Shopping Deals", products: [ { img: f4, offer: "Up to 45% | | off" }, { img: f2, offer: "Min 30% | | off" }, { img: f3, offer: "Up to 55% | | off" }, { img: f4, offer: "Best Deals" }, ], }, { title: "Continue Shopping Deals", products: [ { img: f4, offer: "Up to 45% | | off" }, { img: f2, offer: "Min 30% | | off" }, { img: f3, offer: "Up to 55% | | off" }, { img: f4, offer: "Best Deals" }, ], }, { title: "Continue Shopping Deals", products: [ { img: f4, offer: "Up to 45% | | off" }, { img: f2, offer: "Min 30% | | off" }, { img: f3, offer: "Up to 55% | | off" }, { img: f4, offer: "Best Deals" }, ], }, ];
 
   return (
     <div className="bg-[#E3E6E6]">
-      <div className="relative z-20 lg:mt-[-150px] lg:px-[22px] pb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 ">
+      <div className="relative z-20 lg:mt-[-150px] px-3 sm:px-4 md:px-6 lg:px-[22px] pb-8">
+
+        {/* Responsive Grid */}
+        <div className="grid 
+          grid-cols-1 
+          sm:grid-cols-2 
+          md:grid-cols-3 
+          lg:grid-cols-4 
+          gap-4 sm:gap-5">
+
           {data.map((item, index) => (
-           <div key={index} className="bg-[rgb(255,255,255)] h-[390px] w-[320px]   p-4 hover:shadow-lg transition flex flex-col">
-              {/* Title */}
+            <div
+              key={index}
+              className="bg-white 
+              rounded-lg
+              p-4 
+              flex 
+              flex-col
+              shadow-sm 
+              hover:shadow-lg 
+              transition
+              w-full">
+
               <p className="text-lg font-semibold mb-3">
                 {item.title}
               </p>
 
-              {/* Products */}
-              <div className="grid grid-cols-2 gap-4">
+              {/* Product Grid */}
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 {item.products.map((product, i) => (
                   <div key={i}>
-                   <a href="#"> <img
-                      src={product.img}
-                      alt=""
-                      className="h-[120px] w-full object-fit cursor-pointer"
-                    /></a>
+                    <a href="#">
+                      <img
+                        src={product.img}
+                        alt=""
+                        className="w-full h-[110px] sm:h-[120px] object-contain"
+                      />
+                    </a>
 
-                    {/* offer*/}
-                    <p className="text-xs h-[16px] text-gray-700 mt-1 ml-1 hover:text-orange-600">
-                      {product.offer }
+                    <p className="text-xs text-gray-700 mt-1 ml-1 hover:text-orange-600">
+                      {product.offer}
                     </p>
                   </div>
                 ))}
               </div>
 
-              {/* Push link to bottom */}
               <p className="text-sm text-blue-600 mt-auto hover:underline cursor-pointer">
                 See more
               </p>
             </div>
           ))}
+
         </div>
       </div>
     </div>

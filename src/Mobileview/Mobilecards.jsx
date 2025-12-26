@@ -4,133 +4,43 @@ import img2 from "../assets/b2.png";
 import img3 from "../assets/b3.png";
 import img4 from "../assets/b4.png";
 import img5 from "../assets/f1.png";
+
 const Mobilecards = () => {
   const data = [
-    {
-      title: "Continue Shopping Deals",
-      products: [
-        {
-          img: img1,
-          name: "Stylish Shoes",
-          desc: "Comfortable and trendy running shoes perfect for everyday wear.",
-          price: "$49.99",
-          link: "#",
-        },
-      ],
-    },
-    {
-      title: "Continue Shopping Deals",
-      products: [
-        {
-          img: img2,
-          name: "Stylish Shoes",
-          desc: "Comfortable and trendy running shoes perfect for everyday wear.",
-          price: "$49.99",
-          link: "#",
-        },
-      ],
-    },
-     {
-      title: "Continue Shopping Deals",
-      products: [
-        {
-          img: img3,
-          name: "Stylish Shoes",
-          desc: "Comfortable and trendy running shoes perfect for everyday wear.",
-          price: "$49.99",
-          link: "#",
-        },
-      ],
-    },
-      {
-      title: "Continue Shopping Deals",
-      products: [
-        {
-          img: img3,
-          name: "Stylish Shoes",
-          desc: "Comfortable and trendy running shoes perfect for everyday wear.",
-          price: "$49.99",
-          link: "#",
-        },
-      ],
-    },
-       {
-      title: "Continue Shopping Deals",
-      products: [
-        {
-          img: img4,
-          name: "Stylish Shoes",
-          desc: "Comfortable and trendy running shoes perfect for everyday wear.",
-          price: "$49.99",
-          link: "#",
-        },
-      ],
-    },
-    {
-      title: "Continue Shopping Deals",
-      products: [
-        {
-          img: img5,
-          name: "Stylish Shoes",
-          desc: "Comfortable and trendy running shoes perfect for everyday wear.",
-          price: "$49.99",
-          link: "#",
-        },
-      ],
-    },
+    { products: [{ img: img1, name: "Stylish Shoes 1" }] },
+    { products: [{ img: img2, name: "Stylish Shoes 2" }] },
+    { products: [{ img: img3, name: "Stylish Shoes 3" }] },
+    { products: [{ img: img3, name: "Stylish Shoes 4" }] },
+    { products: [{ img: img4, name: "Stylish Shoes 5" }] },
+    { products: [{ img: img5, name: "Stylish Shoes 6" }] },
+       { products: [{ img: img1, name: "Stylish Shoes 1" }] },
+    { products: [{ img: img2, name: "Stylish Shoes 2" }] },
+    { products: [{ img: img3, name: "Stylish Shoes 3" }] },
   ];
 
   return (
-    <div className="pb-[90px]    ">
-      <div className="">
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
-          {data.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white w-[310px] rounded-md  p-4 hover:shadow-lg transition flex flex-col"
+    <div className="pb-[90px] p-4">
+      <div className="grid grid-cols-2 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
+        {data.map((item, idx) =>
+          item.products.map((product, i) => (
+            <a
+              key={i}
+              href={product.link || "#"}
+              className="flex flex-col items-center "
             >
-              {/* Title */}
-              <p className="text-lg font-semibold ">{item.title}</p>
-
-              {/* Products */}
-              {item.products.map((product, i) => (
-                <a
-                  key={i}
-                  href={product.link}
-                  className="flex flex-col "
-                >
-                  {/* Image */}
-                  <img
-                    src={product.img}
-                    alt={product.name}
-                    className="h-[180px] w-full object-fit rounded-md"
-                  />
-                  <div> 
-
-                  {/* Name */}
-                  <p className="text-sm mt-2 font-semibold">{product.name}</p>
-
-                  {/* Description */}
-                  <p className="text-sm text-gray-600  mt-1">
-                    {product.desc}
-                  </p>
-
-                  {/* Price */}
-                  <p className="text-sm text-gray-800 font-semibold mt-2">
-                    {product.price}
-                  </p>
-                  </div>
-                </a>
-
-              ))}
-
-              {/* See more link */}
-              <p className="text-sm text-blue-600 mt-auto hover:underline cursor-pointer">
-                See more
+              
+              <img
+                src={product.img}
+                
+                className="h-[150px] w-[180px] object-fit rounded-md"
+              />
+              
+              <p className="mt-2 text-center text-sm font-medium text-gray-700">
+                {product.name}
               </p>
-            </div>
-          ))}
-        </div>
+            </a>
+          ))
+        )}
       </div>
     </div>
   );

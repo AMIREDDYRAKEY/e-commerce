@@ -8,8 +8,8 @@ import Contact from '../components/Contact'
 const About = () => {
   return (
     <div>
-        <div className='mt-[-642px] hidden lg:block '><Slider/></div>
-        <div className=''><Cards/></div>
+        <div className=' hidden lg:block '><Slider/></div>
+        <div className='hidden lg:block'><Cards/></div>
         <div className='pb-[20px] hidden lg:flex' ><Bikeslider/></div>
         <div className='pb-[90px] hidden lg:flex'><Fashionslider/></div>
          <div className='hidden lg:flex'><Cardsprice/></div>

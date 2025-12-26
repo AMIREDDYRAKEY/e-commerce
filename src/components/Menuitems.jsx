@@ -16,15 +16,24 @@ const Menuitems = () => {
     "Fashion",
     "Home & Kitchen",
     "Books",
-    
   ];
 
   return (
-    <div className="bg-[#232f3e] h-[45px] text-white text-[14px] font-semibold flex items-center gap-5  justify-start p-3">
-      <div className=" flex items-center gap-5  justify-start">
-        
+    <div className="bg-[#232f3e] h-[45px] text-white text-[14px] font-semibold flex items-center p-3">
+
+      {/* Scrollable container on small screens */}
+      <div
+        className="
+          flex items-center gap-5 
+          justify-start
+          w-full
+          overflow-x-auto
+          scrollbar-hide
+          whitespace-nowrap
+        "
+      >
         {/* All Menu */}
-        <div className="flex items-center gap-2 font-semibold cursor-pointer hover:text-orange-500 ">
+        <div className="flex items-center gap-2 cursor-pointer hover:text-orange-500">
           <FaBars />
           <span>All</span>
         </div>
@@ -33,7 +42,7 @@ const Menuitems = () => {
         {menuItems.map((item, index) => (
           <div
             key={index}
-            className="whitespace-nowrap cursor-pointer hover:text-orange-500  "
+            className="cursor-pointer hover:text-orange-500"
           >
             {item}
           </div>
